@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="CSS/home.css" type="text/css">
-    <title>Projeto Integrador V</title>
+    <title>Projeto Integrador V-A</title>
 </head>
 
 <body>
@@ -19,31 +21,99 @@
     <!--menu-->
     <nav>
         <ul>
-            <li><a href="">Home</a></li>
-            <li>
-                <a href="javascript:void(0)">Cadastros</a>
-                <div>
-                    <a href="">Cadastros de Histórias</a>
-                    <a href="">Cadastro de Imagens</a>
-                    <a href="">Cadastro de Personagens</a>
+            <li><a href=""><i class="fa fa-home">Home</i></a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn"><i class="fa fa-paperclip"></i>Cadastros</a>
+                <div class="dropdown-content">
+                    <a href=""><i class="fa fa-book"></i>Cadastros de Histórias</a>
+                    <a href=""><i class="fa fa-camera"></i>Cadastro de Imagens</a>
+                    <a href=""><i class="fa fa-star"></i>Cadastro de Personagens</a>
                 </div>
             </li>
-            <li><a href="">Historias</a></li>
-            <li><a href="">Personagens</a></li>
-            <li><a href="">Galeria</a></li>
+            <li><a href=""><i class="fa fa-book"></i>Historias</a></li>
+            <li><a href=""><i class="fa fa-user"></i>Personagens</a></li>
+            <li><a href=""><i class="fa fa-image"></i>Galeria</a></li>
         </ul>
     </nav>
 
     <!--Sobre o Site-->
     <section>
-        <article>
+        <!--Artigo de introdução do trabalho.-->
+        <article class="introducao">
+            <h1>Sobre o Projeto Integrador V-A</h1>
+
+            <h3>Introdução</h3>
+
+            <p>
+                O Projeto Integrador V-A tem como objetivo a aplicação de um processo de implementação de uma aplicação
+                web com acompanhamento dos conceitos de testes de software.
+                O projeto, comcarga prevista de 40 horas, visa integrar os conhecimentos e competências desenvolvidas no
+                curso, em particular, nas disciplinas de Teste de Software e Programação Back-End.
+            </p>
 
         </article>
-    </section>
 
+        <!--Artigo de objetivo do trabalho-->
+        <article class="objetivo">
+            <h3>2 - Objetivos do Projeto Integrador V-A</h3>
+
+            <p>
+                No trimestre anterior, você desenvolveu no Projeto Integrador IV-B um projeto para desenvolvimento de
+                uma aplicação web que utilizou dados públicos para prover funcionalidades para beneficiar os seus
+                pretensos usuários no acompanhamento da pandemia. Para dar sequência a este projeto, o objetivo da
+                disciplina de Projeto Integrador V-A é prototipar e implementar as camadas de regras de negócio e acesso
+                a dados (Back-End) da aplicação Web com impacto social. Aspectos relacionados à persistência de dados e
+                acesso a banco de dados deverão ser projetos e desenvolvidos neste projeto.
+            </p>
+            <p>
+                Caso o grupo não tenha um projeto anterior (com o front-end já desenvolvido) ou queira iniciar um novo
+                tema no PI V-A, deve seguir as mesmas orientações para propor uma aplicação de cunho social. Neste Caso
+                o Front-End deverá ser implementado também.
+            </p>
+            <p>
+                As definições gerais para definir a temática dos trabalhos no PI IV-B foram:
+                <br>Desenvolver uma aplicação web com impacto social. Neste período pós-pandemia, as pessoas estão
+                voltando às suas atividades ou criando novas oportunidades, já que tivemos
+                uma retração econômica, sentida pelas famílias e pelas organizações. Por isso, a questão norteadora
+                deste projeto é: "Qual aplicação web pode trazer beneficios sociais para minha cidade ou bairro?"
+            </p>
+            <p>
+                Proponham uma aplicação que tenha um impacto social positivo para a vida dos cidadãos, seja com
+                informações sobre oportunidades de trabalho pós-pademia, seja de oferta de emprego
+                na sua cidade ou bairro, seja para mediar doações para escolas, organizações comunitárias ou ONGs, ou
+                para os cuidados ou adoção de animais de estimação.
+            </p>
+
+            <h4>2.1 - Objetivo Geral</h4>
+            <p>
+                O bejtivo deste projeto é prototipar e implementar uma aplicação web que inclui uma camada Back-End
+                utilizando uma base de dados para implementar persistência de dados.
+            </p>
+
+            <h4>2.2 - Objetivos Específicos</h4>
+            <p>
+                São os objetivos específicos:
+            </p>
+            <ol>
+                <li>Aplicar conceitos de modelagem de base de dados para uma aplicação real.</li><br>
+                <li>Aplicar conhecimentos de programação Back-End no desenvolvimento da aplicação;</li><br>
+                <li>Empregar conceitos e tecnologias de comunicação cliente/sevidor na implementação de uma aplicação web;</li><br>
+                <li>Empregar conceitos de teste de software para verificar se a aplicação atende a requisitos propostos;</li><br>
+                <li>Desenvolvera competência de trabalhar em equipe e as habilidades de negociação, coordenação e cooperação.</li><br>
+            </ol>
+        </article>
+        <div class="clear"></div>
+    </section>
     <!--Rodapé-->
-    <footer>
-        
+    <footer class="rodape">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-youtube"></i>
+        <br><br>
+        <p>&copy; Projeto Integrador V-A | Todos os direitos reservados.</p>
+        <br>
+        <span>Lucas da Silva Carvalho</span>
     </footer>
 </body>
 
