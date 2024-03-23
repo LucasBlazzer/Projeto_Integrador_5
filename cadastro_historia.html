@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="CSS/cadastro_historia.css" type="text/css">
+    <title>Projeto Integrador V-A : Cadastros de Histórias</title>
+</head>
+
+<body>
+    
+    <!--banner do site-->
+    <div class="banner">
+        <p>projeto</p>
+        <p>integrador</p>
+        <p>V-A</p>
+    </div>
+
+    <!--menu-->
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fa fa-home">Home</i></a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn"><i class="fa fa-paperclip"></i>Cadastros</a>
+                <div class="dropdown-content">
+                    <a href="cadastro_historia.html"><i class="fa fa-book"></i>Cadastros de Histórias</a>
+                    <a href=""><i class="fa fa-camera"></i>Cadastro de Imagens</a>
+                    <a href=""><i class="fa fa-star"></i>Cadastro de Personagens</a>
+                </div>
+            </li>
+            <li><a href=""><i class="fa fa-book"></i>Historias</a></li>
+            <li><a href=""><i class="fa fa-user"></i>Personagens</a></li>
+            <li><a href=""><i class="fa fa-image"></i>Galeria</a></li>
+        </ul>
+    </nav>
+
+    <!--Conteiner de cadastro de Histórias-->
+    <div class="conteiner-form">
+
+        <!--Título do formulário.-->
+        <h1>Crie sua história em nosso site!</h1>
+
+        <!--Formulário para o envio do conteúdo para o banco de dados-->
+        <form action="processar_formulario.php" method="POST">
+            <label for="titulo">Título do História:</label><br>
+            <input type="text" id="titulo" name="titulo" required><br><br>
+
+            <label for="autor">Autor da História:</label><br>
+            <input type="text" id="autor" name="autor" required><br><br>
+
+            <label for="conteudo">Conteúdo:</label><br>
+            <textarea id="conteudo" name="conteudo" rows="4" cols="50" required></textarea><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+
+    </div>
+</body>
+
+</html>
