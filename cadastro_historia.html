@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -24,7 +24,7 @@
         <ul>
             <li><a href="index.html"><i class="fa fa-home">Home</i></a></li>
             <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn"><i class="fa fa-paperclip"></i>Cadastros</a>
+                <a href="javascript:void(0)" class="dropbtn" style="background-color: springgreen;"><i class="fa fa-paperclip"></i>Cadastros</a>
                 <div class="dropdown-content">
                     <a href="cadastro_historia.html"><i class="fa fa-book"></i>Cadastros de Histórias</a>
                     <a href=""><i class="fa fa-camera"></i>Cadastro de Imagens</a>
@@ -44,7 +44,7 @@
         <h1>Crie sua história em nosso site!</h1>
 
         <!--Formulário para o envio do conteúdo para o banco de dados-->
-        <form action="processar_formulario.php" method="POST">
+        <form action="PHP/processar_formulario.php" method="POST">
             <label for="titulo">Título do História:</label><br>
             <input type="text" id="titulo" name="titulo" required><br><br>
 
@@ -58,6 +58,18 @@
         </form>
 
     </div>
+
+    <!--Rodapé-->
+    <footer class="rodape">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-youtube"></i>
+        <br><br>
+        <p>&copy; Projeto Integrador V-A | Todos os direitos reservados.</p>
+        <br>
+        <span>Lucas da Silva Carvalho</span>
+    </footer>
 </body>
 
 </html>

@@ -55,6 +55,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    height: auto;
+}
 
 /*Banner do site*/
 .banner {
@@ -137,10 +140,12 @@ i {
     letter-spacing: 2.5px;
 }
 
+/*Estilização do formulário.*/
 .conteiner-form{
     position: absolute;
     text-align: center;
     width:100%;
+    margin-bottom: 2px;
 }
 
 .conteiner-form h1{
@@ -159,13 +164,14 @@ i {
 
 .conteiner-form input{
     width:550px;
+    height: 35px;
 }
 
 .conteiner-form textarea{
     resize: vertical;
     width:550px;
     overflow: auto;
-    height: 550px;
+    height: 350px;
 }
 
 .conteiner-form input:focus{
@@ -174,4 +180,24 @@ i {
 
 .conteiner-form textarea:focus{
     background-color: cyan;
+}
+
+/*Estilização do rodapé do site*/
+.rodape {
+    position: absolute;
+    float: left;
+    width: 100%;
+    height: auto;
+    background-color: #696969;
+    bottom: 0;
+    color: white;
+    padding: 3.0vh;
+    text-align: center;
+    letter-spacing: 0.8vh;
+    font-size: 2vh;
+    margin-top: 5px;
+}
+
+.rodape p {
+    white-space: 2vh;
 }
