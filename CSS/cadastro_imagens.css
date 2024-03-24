@@ -127,7 +127,7 @@ li.dropdown {
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: crimson;
 }
 
 .dropdown:hover .dropdown-content {
@@ -140,48 +140,36 @@ i {
     letter-spacing: 2.5px;
 }
 
-/*Estilização do formulário.*/
+/*Estilização da página de imagens.*/
 .conteiner-form{
     position: absolute;
+    width: 100%;
     text-align: center;
-    width:100%;
-    margin-bottom: 2px;
+    padding: 1.5rem;
 }
 
 .conteiner-form h1{
-    font-family: 'font_4';
-    padding-top: 25px;
+    font-family: 'font_8';
+    font-size: 45px;
     font-style: italic;
+    line-height: 3.5rem;
+    letter-spacing: 0.8rem;
 }
 
 .conteiner-form label{
+    line-height: 4rem;
     font-family: 'font_10';
-    line-height: 45px;
-    font-size: 20px;
-    text-decoration: underline;
-    letter-spacing: 0.2rem;
+    font-size: 25px;
 }
-
 .conteiner-form input{
-    width:550px;
+    width: 350px;
+    text-align: center;
     height: 35px;
 }
-
-.conteiner-form textarea{
-    resize: vertical;
-    width:550px;
-    overflow: auto;
-    height: 350px;
-}
-
 .conteiner-form input:focus{
-    background-color: cyan;
+    background-color: crimson;
+    color: white;
 }
-
-.conteiner-form textarea:focus{
-    background-color: cyan;
-}
-
 /*Estilização do rodapé do site*/
 .rodape {
     position: absolute;

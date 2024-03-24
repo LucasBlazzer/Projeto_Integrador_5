@@ -1,11 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="CSS/cadastro_imagens.css" type="text/css">
     <title>Projeto Integrador V-A: Cadastro de Imagens</title>
 </head>
+
 <body>
-    
+    <!--banner do site-->
+    <div class="banner">
+        <p>projeto</p>
+        <p>integrador</p>
+        <p>V-A</p>
+    </div>
+
+    <!--menu-->
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fa fa-home">Home</i></a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn" style="background-color: springgreen; color: black;"><i
+                        class="fa fa-paperclip"></i>Cadastros</a>
+                <div class="dropdown-content">
+                    <a href="cadastro_historia.html"><i class="fa fa-book"></i>Cadastros de Histórias</a>
+                    <a href="cadastro_imagens.html"><i class="fa fa-camera"></i>Cadastro de Imagens</a>
+                    <a href="cadastro_personagens.html"><i class="fa fa-star"></i>Cadastro de Personagens</a>
+                </div>
+            </li>
+            <li><a href="historia_postadas.html"><i class="fa fa-book"></i>Historias</a></li>
+            <li><a href="personagens_criados.html"><i class="fa fa-user"></i>Personagens</a></li>
+            <li><a href="galeria.html"><i class="fa fa-image"></i>Galeria</a></li>
+        </ul>
+    </nav>
+
+    <!--Criação do formulário de envio de imagens.-->
+    <div class="conteiner-form">
+        <h1>Envie sua imagem para nosso site.</h1>
+        <form action="PHP/processar_imagem.php" method="POST" enctype="multipart/form-data">
+            <label for="data_hora">Data e Hora:</label><br>
+            <input type="datetime-local" id="data_hora" name="data_hora" required><br><br>
+
+            <label for="imagem">Imagem:</label><br>
+            <input type="file" id="imagem" name="imagem" accept="image/*" required><br><br>
+
+            <label for="autor">Autor do Envio:</label><br>
+            <input type="text" id="autor" name="autor" required><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+
+    </div>
+
+    <!--Rodapé-->
+    <footer class="rodape">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-youtube"></i>
+        <br><br>
+        <p>&copy; Projeto Integrador V-A | Todos os direitos reservados.</p>
+        <br>
+        <span>Lucas da Silva Carvalho</span>
+    </footer>
 </body>
+
 </html>
